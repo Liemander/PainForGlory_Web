@@ -33,3 +33,7 @@ F:\Development\Pain for Glory MMO\PainForGlory_Web\obj\Debug\net8.0\refint\PainF
 F:\Development\Pain for Glory MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.pdb
 F:\Development\Pain for Glory MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.genruntimeconfig.cache
 F:\Development\Pain for Glory MMO\PainForGlory_Web\obj\Debug\net8.0\ref\PainForGlory_Web.dll
+F:\Development\Pain for Glory MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Common.dll
+F:\Development\Pain for Glory MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Common.pdb
+F:\Development\Pain for Glory MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.csproj.AssemblyReference.cache
+F:\Development\Pain for Glory MMO\PainForGlory_Web\obj\Debug\net8.0\PainForG.F474AAD4.Up2Date
