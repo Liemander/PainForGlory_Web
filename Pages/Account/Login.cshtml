@@ -15,6 +15,9 @@
         <label asp-for="Password"></label>
         <input asp-for="Password" type="password" />
     </div>
-    <div style="color:red">@Model.ErrorMessage</div>
-    <button type="submit">Log In</button>
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <p style="color:red">@Model.ErrorMessage</p>
+    }
+    <button type="submit">Login</button>
 </form>

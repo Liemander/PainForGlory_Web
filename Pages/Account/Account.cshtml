@@ -1,0 +1,75 @@
+﻿@page
+@model PainForGlory_Web.Pages.Account.AccountModel
+@{
+    ViewData["Title"] = "Account Settings";
+}
+
+<h2>Account Settings</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Current Email:</label>
+        <p class="form-control-plaintext">@Model.CurrentEmail</p>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NewUsername" class="form-label"></label>
+        <input asp-for="NewUsername" class="form-control" />
+        <span asp-validation-for="NewUsername" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NewEmail" class="form-label"></label>
+        <input asp-for="NewEmail" class="form-control" />
+        <span asp-validation-for="NewEmail" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NewPassword" class="form-label"></label>
+        <input asp-for="NewPassword" type="password" class="form-control" />
+        <span asp-validation-for="NewPassword" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ConfirmPassword" class="form-label"></label>
+        <input asp-for="ConfirmPassword" type="password" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="CurrentPassword" class="form-label"></label>
+        <input asp-for="CurrentPassword" type="password" class="form-control" />
+        <span asp-validation-for="CurrentPassword" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Account</button>
+</form>
+
+<hr />
+
+<div class="accordion" id="historyAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHistory">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHistory" aria-expanded="false" aria-controls="collapseHistory">
+                View Username & Email History
+            </button>
+        </h2>
+        <div id="collapseHistory" class="accordion-collapse collapse" aria-labelledby="headingHistory" data-bs-parent="#historyAccordion">
+            <div class="accordion-body">
+                @if (Model.PreviousInfos.Any())
+                {
+                    <ul>
+                        @foreach (var info in Model.PreviousInfos)
+                        {
+                            <li>
+                                <strong>@info.ChangedAt.ToLocalTime():</strong>
+                                @(info.OldUsername != null ? $"Username: {info.OldUsername}" : "") @(info.OldEmail != null ? $"Email: {info.OldEmail}" : "")
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>No history found.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
