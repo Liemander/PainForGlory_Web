@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using PainForGlory_Common.Helpers;
 
 namespace PainForGlory_Web.Pages.Account
 {
@@ -25,10 +26,8 @@ namespace PainForGlory_Web.Pages.Account
         [BindProperty] public string? NewPassword { get; set; }
         [BindProperty] public string? ConfirmPassword { get; set; }
         [BindProperty] public string? CurrentPassword { get; set; }
-
-
         public string? CurrentEmail { get; set; }
-        public List<PreviousAccountInfo> PreviousInfos { get; set; } = new();
+        public List<FormattedAccountHistory> FormattedHistory { get; set; } = new();
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -42,14 +41,15 @@ namespace PainForGlory_Web.Pages.Account
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
 
-
             // Fetch account info
+            string? currentEmail = null;
             var response = await client.GetAsync($"{apiUrl}/api/account/info");
             if (response.IsSuccessStatusCode)
             {
                 var result = JsonSerializer.Deserialize<AccountInfo>(
                     await response.Content.ReadAsStringAsync(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 CurrentEmail = result?.Email;
+                currentEmail = result?.Email;
             }
 
             // Fetch history
@@ -58,11 +58,17 @@ namespace PainForGlory_Web.Pages.Account
             {
                 var historyList = JsonSerializer.Deserialize<List<PreviousAccountInfo>>(
                     await history.Content.ReadAsStringAsync(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-                if (historyList != null) PreviousInfos = historyList;
+
+                if (historyList != null)
+                {
+                    // Use the shared formatter
+                    FormattedHistory = AccountHistoryFormatter.BuildFormattedHistoryList(historyList, username, currentEmail);
+                }
             }
 
             return Page();
         }
+
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -120,6 +126,8 @@ namespace PainForGlory_Web.Pages.Account
 
             if (!string.IsNullOrWhiteSpace(newToken))
             {
+                Response.Cookies.Delete("access_token");
+
                 Response.Cookies.Append("access_token", newToken!, new CookieOptions
                 {
                     HttpOnly = true,

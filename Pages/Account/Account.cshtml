@@ -53,15 +53,12 @@
         </h2>
         <div id="collapseHistory" class="accordion-collapse collapse" aria-labelledby="headingHistory" data-bs-parent="#historyAccordion">
             <div class="accordion-body">
-                @if (Model.PreviousInfos.Any())
+                @if (Model.FormattedHistory.Any())
                 {
                     <ul>
-                        @foreach (var info in Model.PreviousInfos)
+                        @foreach (var item in Model.FormattedHistory)
                         {
-                            <li>
-                                <strong>@info.ChangedAt.ToLocalTime():</strong>
-                                @(info.OldUsername != null ? $"Username: {info.OldUsername}" : "") @(info.OldEmail != null ? $"Email: {info.OldEmail}" : "")
-                            </li>
+                            <li>@item.FormattedText</li>
                         }
                     </ul>
                 }
