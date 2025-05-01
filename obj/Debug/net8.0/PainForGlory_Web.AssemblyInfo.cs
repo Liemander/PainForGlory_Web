@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PainForGlory_Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e80bf6379cb0eddd51ebf32e3a3abd98f2a03869")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c97b16848efc303c914b52d4b8906a0013bdcaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("PainForGlory_Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PainForGlory_Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

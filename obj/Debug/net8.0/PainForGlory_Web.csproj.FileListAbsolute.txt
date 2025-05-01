@@ -42,3 +42,47 @@ F:\Development\Pain for Glory MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.Id
 F:\Development\Pain for Glory MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 F:\Development\Pain for Glory MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 F:\Development\Pain for Glory MMO\PainForGlory_Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\appsettings.Development.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\appsettings.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.staticwebassets.endpoints.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.staticwebassets.runtime.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.exe
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.deps.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.runtimeconfig.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Web.pdb
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Common.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\bin\Debug\net8.0\PainForGlory_Common.pdb
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.csproj.AssemblyReference.cache
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.AssemblyInfoInputs.cache
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.AssemblyInfo.cs
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.csproj.CoreCompileInputs.cache
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.MvcApplicationPartsAssemblyInfo.cache
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.RazorAssemblyInfo.cache
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.RazorAssemblyInfo.cs
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.sourcelink.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\scopedcss\bundle\PainForGlory_Web.styles.css
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\scopedcss\projectbundle\PainForGlory_Web.bundle.scp.css
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets.build.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets.development.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets\msbuild.PainForGlory_Web.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets\msbuild.PainForGlory_Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets\msbuild.build.PainForGlory_Web.props
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PainForGlory_Web.props
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PainForGlory_Web.props
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets.pack.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForG.F474AAD4.Up2Date
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\refint\PainForGlory_Web.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.pdb
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\PainForGlory_Web.genruntimeconfig.cache
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Debug\net8.0\ref\PainForGlory_Web.dll
