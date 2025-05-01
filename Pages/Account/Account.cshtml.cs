@@ -46,8 +46,11 @@ namespace PainForGlory_Web.Pages.Account
             var response = await client.GetAsync($"{apiUrl}/api/account/info");
             if (response.IsSuccessStatusCode)
             {
-                var result = JsonSerializer.Deserialize<AccountInfo>(
-                    await response.Content.ReadAsStringAsync(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var contentString = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("Raw Response Content:");
+                Console.WriteLine(contentString); // or log it however you prefer
+
+                var result = JsonSerializer.Deserialize<AccountInfo>(contentString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 CurrentEmail = result?.Email;
                 currentEmail = result?.Email;
             }
