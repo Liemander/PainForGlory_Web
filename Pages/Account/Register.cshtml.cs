@@ -23,26 +23,36 @@ public class RegisterModel : PageModel
 
     public async Task<IActionResult> OnPostAsync()
     {
-        var payload = new
-        {
-            Username,
-            Email,
-            Password
-        };
-
+        var payload = new { Username, Email, Password };
         var client = _httpFactory.CreateClient();
-        var baseUrl = _config["LoginServer:BaseUrl"];
-        var json = JsonSerializer.Serialize(payload);
-        var response = await client.PostAsync($"{baseUrl}/api/account/register",
-            new StringContent(json, Encoding.UTF8, "application/json"));
+        var baseUrl = _config["LoginApiUrl"] ?? "http://localhost:8080"; // note fallback updated for local
 
-        if (response.IsSuccessStatusCode)
+        try
         {
-            return RedirectToPage("Login");
+            var json = JsonSerializer.Serialize(payload);
+            var response = await client.PostAsync($"{baseUrl}/api/account/register",
+                new StringContent(json, Encoding.UTF8, "application/json"));
+
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToPage("Login");
+            }
+
+            var errorText = await response.Content.ReadAsStringAsync();
+            if (string.IsNullOrWhiteSpace(errorText))
+            {
+                ErrorMessage = $"Server responded with {(int)response.StatusCode} {response.ReasonPhrase}";
+            }
+            else
+            {
+                ErrorMessage = $"Server error ({(int)response.StatusCode}): {errorText}";
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Request failed: {ex.Message}";
         }
 
-        var error = await response.Content.ReadAsStringAsync();
-        ErrorMessage = $"Error: {error}";
         return Page();
     }
 }

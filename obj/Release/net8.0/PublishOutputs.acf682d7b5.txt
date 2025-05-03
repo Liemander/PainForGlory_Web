@@ -1,0 +1,14 @@
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Web.exe
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\appsettings.Development.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\appsettings.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Web.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Web.deps.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Web.runtimeconfig.json
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Web.pdb
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\Microsoft.IdentityModel.Abstractions.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\Microsoft.IdentityModel.Logging.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\Microsoft.IdentityModel.Tokens.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\System.IdentityModel.Tokens.Jwt.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Common.dll
+F:\Development\Pain_for_Glory_MMO\PainForGlory_Web\obj\Docker\publish\PainForGlory_Common.pdb
